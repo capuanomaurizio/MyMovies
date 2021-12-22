@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        lblTitolo = findViewById(R.id.lblTitolo);
+        lblTitolo = findViewById(R.id.lblFilmTitle);
         btnPopola = findViewById(R.id.btnPopola);
     }
 

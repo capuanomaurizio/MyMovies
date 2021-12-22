@@ -28,12 +28,17 @@ public class ListActivity extends AppCompatActivity {
                 "Salvate il soldato Python", "Quasi nemici", "WALL C", "Il buio oltre il frontend", "Non aprire quella porta (80)",
                 "Monty Python e il Sacro Java", "The wall of wolfstreet", "V per incollare", "Il pigiama con il bambino a righe", "Jurassic bugs",
                 "The truBOOL show", "L'esorC#ista", "Mary PoP3ins"};
+        String[] images = new String[] {"intentstellar.jpg", "lalalamb.jpg", "lordoftheonions.jpg", "locandina.jpg", "locandina.jpg", "locandina.jpg",
+                "locandina.jpg", "locandina.jpg", "locandina.jpg", "locandina.jpg", "locandina.jpg", "locandina.jpg", "locandina.jpg", "locandina.jpg",
+                "locandina.jpg", "locandina.jpg", "locandina.jpg", "locandina.jpg", "locandina.jpg", "locandina.jpg", "locandina.jpg", "locandina.jpg", };
         ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, movies);
         lsvwList.setAdapter(itemsAdapter);
         lsvwList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                Intent i = new Intent(getApplicationContext(), FilmActivity.class);
+                i.putExtra("title", (String)lsvwList.getItemAtPosition(position));
+                i.putExtra("image", images[position]);
                 startActivity(i);
             }
         });
