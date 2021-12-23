@@ -30,7 +30,7 @@ public class ListActivity extends AppCompatActivity {
         String[] images = new String[] {"intentstellar.jpg", "lalalamb.jpg", "lordoftheonions.jpg", "harryplotter.jpg", "lavitaornella.jpg",
                 "allaricercadelbug.jpg", "mammahopersolbinario.jpg", "phphypertextpreprocessor.jpg", "avengersendpoint.png", "salvateilsoldatopython.jpg",
                 "quasinemici.jpg", "wallc.jpg", "buiofrontend.jpg", "nonapritelaporta80.jpg", "vperincollare.jpg", "ilpigiamacolbambinoarighe.jpg",
-                "jurassicbugs.jpg", "thetrueboolshow.jpg", "lesorc#ista.jpg", "marypop3ins.jpg", };
+                "jurassicbugs.jpg", "thetrueboolshow.jpg", "lesorcista.jpg", "marypop3ins.jpg"};
         ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, movies);
         lsvwList.setAdapter(itemsAdapter);
         lsvwList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
