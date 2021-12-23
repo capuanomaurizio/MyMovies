@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/lblFilmTitle"
-        android:layout_width="372dp"
-        android:layout_height="75dp"
+        android:layout_width="380dp"
+        android:layout_height="113dp"
         android:textAlignment="center"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,7 +22,7 @@
         android:id="@+id/locandina"
         android:layout_width="452dp"
         android:layout_height="642dp"
-        android:layout_marginBottom="252dp"
+        android:layout_marginBottom="264dp"
         android:contentDescription="@string/locandinafilm"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

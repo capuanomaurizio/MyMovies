@@ -24,13 +24,13 @@ public class ListActivity extends AppCompatActivity {
         lsvwList = findViewById(R.id.lsvwList);
         btnClose = findViewById(R.id.btnClose);
         String[] movies = new String[] {"Intentstellar", "La La Lamb", "The lord of the onion rings", "Harry Plotter", "La vita è Ornella",
-                "Alla ricerca del Buggy", "La scheda madre ha perso il binario", "PHP: recursive acronym", "Avengers: Endpoint",
-                "Salvate il soldato Python", "Quasi nemici", "WALL C", "Il buio oltre il frontend", "Non aprire quella porta (80)",
-                "Monty Python e il Sacro Java", "The wall of wolfstreet", "V per incollare", "Il pigiama con il bambino a righe", "Jurassic bugs",
-                "The truBOOL show", "L'esorC#ista", "Mary PoP3ins"};
-        String[] images = new String[] {"intentstellar.jpg", "lalalamb.jpg", "lordoftheonions.jpg", "locandina.jpg", "locandina.jpg", "locandina.jpg",
-                "locandina.jpg", "locandina.jpg", "locandina.jpg", "locandina.jpg", "locandina.jpg", "locandina.jpg", "locandina.jpg", "locandina.jpg",
-                "locandina.jpg", "locandina.jpg", "locandina.jpg", "locandina.jpg", "locandina.jpg", "locandina.jpg", "locandina.jpg", "locandina.jpg", };
+                "Alla ricerca del Bug", "Mamma ho perso l'binario", "PHP: recursive acronym", "Avengers: Endpoint", "Salvate il soldato Python",
+                "Quasi nemici", "WALL C", "Il buio oltre il frontend", "Non aprite quella porta (80)", "V per incollare", "Il pigiama con il bambino a righe",
+                "Jurassic bugs", "The trueBOOL show", "L'esorC#ista", "Mary PoP3ins"};
+        String[] images = new String[] {"intentstellar.jpg", "lalalamb.jpg", "lordoftheonions.jpg", "harryplotter.jpg", "lavitaornella.jpg",
+                "allaricercadelbug.jpg", "mammahopersolbinario.jpg", "phphypertextpreprocessor.jpg", "avengersendpoint.png", "salvateilsoldatopython.jpg",
+                "quasinemici.jpg", "wallc.jpg", "buiofrontend.jpg", "nonapritelaporta80.jpg", "vperincollare.jpg", "ilpigiamacolbambinoarighe.jpg",
+                "jurassicbugs.jpg", "thetrueboolshow.jpg", "lesorc#ista.jpg", "marypop3ins.jpg", };
         ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, movies);
         lsvwList.setAdapter(itemsAdapter);
         lsvwList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
